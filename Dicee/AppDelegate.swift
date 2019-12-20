@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppsFlyerTrackerDelegate 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        //call AF ID before SDK initialize
+        //call AF ID before SDK initialize (client test)
         print(AppsFlyerTracker.shared().getAppsFlyerUID())
         
         
@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppsFlyerTrackerDelegate 
         
         
         /*Uninstall tracking code */
-//        UNUserNotificationCenter.current().requestAuthorization(options:[.badge, .alert, .sound]){ (granted, error) in }
+        UNUserNotificationCenter.current().requestAuthorization(options:[.badge, .alert, .sound]){ (granted, error) in }
 //        application.registerForRemoteNotifications()
         
         
