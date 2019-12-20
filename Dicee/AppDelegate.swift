@@ -27,8 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppsFlyerTrackerDelegate 
         
         // Override point for customization after application launch.
         
-        AppsFlyerTracker.shared().appsFlyerDevKey = "jMAPyVLrxY7Q9XM8tZ6h9G";
-        AppsFlyerTracker.shared().appleAppID = "1269766486"
+        AppsFlyerTracker.shared().appsFlyerDevKey = "DEV_KEY_HERE";
+        AppsFlyerTracker.shared().appleAppID = "NUMERICAL_APP_ID_HERE"
         
         AppsFlyerTracker.shared().delegate = self
         
